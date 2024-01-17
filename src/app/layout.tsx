@@ -18,29 +18,31 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="mx-auto flex h-16 max-w-4xl flex-1 items-center justify-between bg-red-100">
-          <ul className="flex flex-1 items-center gap-5">
-            <li>News</li>
-            <li>Location</li>
-            <li>Services</li>
-          </ul>
-          <div className="flex flex-1 items-center justify-center">
-            <Image
-              src={"logo.svg"}
-              alt="logo"
-              width={136}
-              height={57}
-              style={{ width: "auto", height: "auto" }}
-            />
-          </div>
-          <div className="flex flex-1 items-center justify-end gap-8">
-            {/* <div>P</div> */}
-            <button className="flex items-center justify-center gap-3 rounded-xl bg-[#002172] px-3 py-2 text-white">
-              Join Us
-            </button>
-            <button className="flex items-center justify-center gap-2 rounded-xl border border-[#002172] px-3 py-2 text-sm">
-              Sign In
-            </button>
+        <nav className="  h-16  flex-1 bg-white text-black">
+          <div className="mx-auto flex h-full max-w-4xl items-center justify-between ">
+            <ul className="flex flex-1 items-center gap-5">
+              <li>News</li>
+              <li>Location</li>
+              <li>Services</li>
+            </ul>
+            <div className="flex flex-1 items-center justify-center">
+              <Image
+                src={"logo.svg"}
+                alt="logo"
+                width={136}
+                height={57}
+                style={{ width: "auto", height: "auto" }}
+              />
+            </div>
+            <div className="flex flex-1 items-center justify-end gap-8">
+              {/* <div>P</div> */}
+              <button className="flex items-center justify-center gap-3 rounded-xl bg-[#002172] px-3 py-2 text-white">
+                Join Us
+              </button>
+              <button className="flex items-center justify-center gap-2 rounded-xl border border-[#002172] px-3 py-2 text-sm">
+                Sign In
+              </button>
+            </div>
           </div>
         </nav>
         {children}

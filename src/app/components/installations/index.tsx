@@ -2,7 +2,7 @@ import { fetchContainers, fetchNews } from "@/app/lib/_rest";
 import Image from "next/image";
 
 export default async function Installations() {
-  const installations = await fetchContainers();
+  const installations = await fetchContainers("newsgallery");
 
   return (
     <div className="flex h-full w-full items-center justify-center gap-3">

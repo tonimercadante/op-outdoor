@@ -3,6 +3,7 @@ import SliderWantedWrapper from "./components/slider-wanted/slider-wanted-wrappe
 import News from "@/app/components/news";
 import { fetchNews } from "./lib/_rest";
 import Installations from "./components/installations";
+import Services from "./components/services";
 
 type Bounty = {
   name: string;
@@ -44,12 +45,14 @@ export default async function Home() {
       <div className="mt-10 w-full">
         <SliderWantedWrapper bountys={data} />
       </div>
+
       <div className="mx-auto h-[536px] max-w-4xl">
         <h1 className="mx-auto">News</h1>
         <div className="relative mx-auto pt-[50%]">
           <News />
         </div>
       </div>
+
       <div className="mt-20 flex flex-1 items-center justify-center">
         <button
           className="w-full max-w-[540px] shrink-0 rounded-xl bg-[#271fc7] py-2 text-white "
@@ -61,8 +64,15 @@ export default async function Home() {
           Alistar-se agora mesmo
         </button>
       </div>
+
       <div className="mt-20 flex h-[400px] w-full flex-1 items-center justify-center">
         <Installations />
+      </div>
+      <div className="mx-auto  max-w-4xl">
+        <h1 className="mx-auto">Services</h1>
+        <div className="mt-20 flex w-full flex-1 items-center justify-center">
+          <Services />
+        </div>
       </div>
     </main>
   );
